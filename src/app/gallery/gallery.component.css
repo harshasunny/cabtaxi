@@ -10,7 +10,6 @@
     height: 100%;
     object-fit: cover;
 }
-
 .img-gal-1, .img-gal-4 {
     grid-column-start: 1;
     grid-column-end: 4;
@@ -23,7 +22,6 @@
     grid-column-start: 7;
     grid-column-end: 10;
 }
-
 .img-gal-1, .img-gal-3 {
     grid-row-start:1;
     grid-row-end: 4;
@@ -40,4 +38,12 @@
     grid-row-start:5;
     grid-row-end: 8;
 }
-
+/* image zoom*/
+.zoom {    
+    transition: transform .5s;    
+}  
+.zoom:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+}
